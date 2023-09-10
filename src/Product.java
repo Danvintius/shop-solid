@@ -1,15 +1,19 @@
 public class Product {
     public String title;
     public int cost;
-    // public static String category;
+    public String category;
 
-    public Product(String title, int cost) {
+    public Product() {
+
+    }
+    public Product(String title, int cost, String category) {
         this.title = title;
         this.cost = cost;
+        this.category = category;
     }
 
     @Override
     public String toString() {
-        return title + " " + cost + " (категории пока нет)";
+        return title + " " + cost + " (категория: " + category + " )";
     }
 }
